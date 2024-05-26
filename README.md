@@ -14,7 +14,7 @@ Please contact m@sec.technology if you have any questions
 
 ```
 /main.go    - program logic
-/env        - template for environment variables
+/.env        - template for environment variables
 /run.sh     - bash wrapper to parse envars from a file
 /go.sum     - checksums for golang dependencies
 /go.mod     - golang module properties definition
@@ -29,7 +29,7 @@ The following environment variables need to be set, as explained below:
 GITHUB_ACCESS_TOKEN     -- Access token for the github account hosting the private repo
 ```
 
-Copy the env template to .env and add the required values then source them into the proxy using the run.sh wrapper with the syntax "run.sh ${filename} ${ProgramExecution}", specifically "./run.sh .env go run main.go"
+Copy the .env template to env and add the required values then source them into the proxy using the run.sh wrapper with the syntax "run.sh ${filename} ${ProgramExecution}", specifically "./run.sh .env go run main.go"
 
 ```bash
 

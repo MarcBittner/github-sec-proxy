@@ -80,7 +80,7 @@ func main() {
 
 		// Add GitHub authentication token to the request
 		proxy.ModifyResponse = func(r *http.Response) error {
-			r.Header.Set("Authorization", "token YOUR_GITHUB_ACCESS_TOKEN")
+			r.Header.Set("Authorization", "token GITHUB_ACCESS_TOKEN")
 			return nil
 		}
 
